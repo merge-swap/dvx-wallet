@@ -17,7 +17,6 @@ RUN apt-get update &&\
     apt-get clean &&\
     useradd -ms /bin/bash wallet
 
-VOLUME ["/home/wallet/.DVXcoind"]
+VOLUME ["/root/.DVXcoind"]
 EXPOSE 17057/tcp 
-USER wallet 
 CMD DVXcoind -printtoconsole
